@@ -43,6 +43,7 @@ export const MENU = [
   { name: 'Movies', link: '/movies' },
   { name: 'About', link: '/about' },
   { name: 'Contact', link: '/contact' },
+  { name: 'Login or sign up', link: '/login' },
 ];
 
 // Images for index, about and contact page
@@ -291,6 +292,16 @@ app.get('/movies/:id/reviews/:page', async (req, res) => {
   res.json(reviews);
 });
 
+// API route for login page
+app.get('/login', async (request, response) => {
+  renderPage(response, 'login');
+});
+
+// API route for signup page
+
+app.get('/signup', async (request, response) => {
+  renderPage(response,'signup');
+});
 
 //The 404 Route (ALWAYS Keep this as the last route)
 app.get('*', async function (request, response) {
