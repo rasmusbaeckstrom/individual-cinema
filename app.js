@@ -298,9 +298,13 @@ app.get('/login', async (request, response) => {
 });
 
 // API route for signup page
-
 app.get('/signup', async (request, response) => {
   renderPage(response,'signup');
+});
+
+// API route for profile page
+app.get('/profile', async (request, response) => {
+  renderPage(response,'profile');
 });
 
 //The 404 Route (ALWAYS Keep this as the last route)

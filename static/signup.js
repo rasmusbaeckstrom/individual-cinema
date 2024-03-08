@@ -43,6 +43,10 @@ document.getElementById("signupButton").addEventListener("click", function () {
   window.location.href = "/signup";
 });
 
+document.getElementById("loginButtton").addEventListener("click", function () {
+  window.location.href = "/profile";
+});
+
 document.addEventListener("DOMContentLoaded", function() {
   const passwordInput = document.getElementById("password");
   const showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
